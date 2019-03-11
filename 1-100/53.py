@@ -1,6 +1,6 @@
 # -*-coding:utf-8-*-
 class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
+    def maxSubArray(self, nums):
         if len(nums) == 0:
             return 0
         dp = [0 for i in range(len(nums))]

@@ -1,4 +1,6 @@
 # -*-coding:utf-8-*-
+from urllib3 import request
+import urllib3
 
 class Solution:
     def singleNumber(self, nums):
@@ -6,3 +8,5 @@ class Solution:
         for num in nums:
             a ^= num
         return a
+
+urllib3.__version__

@@ -16,6 +16,8 @@ class Solution:
         if sum(cur_seq) > self.target:
             return
         for num in self.candidates:
+            if len(cur_seq) > 0 and num < cur_seq[-1]:
+                continue
             self.back(cur_seq + [num])
 
 
